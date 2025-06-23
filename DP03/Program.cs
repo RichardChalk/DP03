@@ -9,11 +9,11 @@
             fighter.PerformAttack();
 
             // Byt till pilbåge
-            fighter.SetAttackStrategy(new RangedAttack());
+            fighter.SetAttack(new RangedAttack());
             fighter.PerformAttack();
 
             // Byt till magi
-            fighter.SetAttackStrategy(new MagicAttack());
+            fighter.SetAttack(new MagicAttack());
             fighter.PerformAttack();
         }
 
@@ -61,7 +61,7 @@
             }
 
             // Byt attack under spelets gång
-            public void SetAttackStrategy(IAttack newAttack)
+            public void SetAttack(IAttack newAttack)
             {
                 _attack = newAttack;
             }
